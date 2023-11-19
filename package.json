@@ -1,0 +1,30 @@
+{
+  "name": "local-configuration-manager",
+  "version": "1.0.0",
+  "description": "Backend applications local configuration manager",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UlisesSchreiner/local-configuration-manager.git"
+  },
+  "keywords": [
+    "config",
+    "read",
+    "json"
+  ],
+  "author": "Ulises Schreiner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UlisesSchreiner/local-configuration-manager/issues"
+  },
+  "homepage": "https://github.com/UlisesSchreiner/local-configuration-manager#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.2"
+  }
+}
