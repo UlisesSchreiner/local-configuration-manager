@@ -1,5 +1,5 @@
 'use strict';
-import FileNotFound from "./model/errors";
+import FileNotFound from './model/errors';
 const fs = require('fs');
 
 class LocalConfigsManager {

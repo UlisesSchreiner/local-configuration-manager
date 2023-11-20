@@ -2,11 +2,7 @@
   "name": "local-configuration-manager",
   "version": "1.0.0",
   "description": "Backend applications local configuration manager",
-  "main": "index.js",
-  "scripts": {
-    "test": "test",
-    "watch": "ts-node generate-package-json.ts && tsc -w"
-  },
+  "main": "./index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UlisesSchreiner/local-configuration-manager.git"
@@ -25,9 +21,5 @@
   "dependencies": {
     "fs": "^0.0.1-security"
   },
-  "devDependencies": {
-    "@types/node": "^20.9.2",
-    "ts-node": "^10.9.1",
-    "tsconfig-paths": "^4.2.0"
-  }
+  "typings": "./index.d.ts"
 }
