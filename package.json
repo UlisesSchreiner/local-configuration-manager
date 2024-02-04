@@ -1,6 +1,6 @@
 {
   "name": "local-configuration-manager",
-  "version": "0.0.1",
+  "version": "1.0.3",
   "description": "Backend applications local configuration manager",
   "main": "index.js",
   "scripts": {
