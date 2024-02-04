@@ -1,5 +1,3 @@
-import { getConfigFile } from "./LocalConfigsManager";
+import { getConfigFile, getRestClientFile } from "./LocalConfigManager";
 
-export default {
-    getConfigFile
-}
+export { getConfigFile, getRestClientFile };

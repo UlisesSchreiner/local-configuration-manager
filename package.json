@@ -1,11 +1,14 @@
 {
   "name": "local-configuration-manager",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "Backend applications local configuration manager",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "watch": "ts-node generate-package-json.ts && tsc -w"
+    "test": "nyc ts-mocha lib/**/*.test.ts",
+    "watch": "cp README.md dist && ts-node generate-package-json.ts && tsc -w",
+    "lint": "eslint . --ext .ts --fix --ignore-pattern dist",
+    "publish-version": "cd dist && npm publish",
+    "version-patch": "cd dist && npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
@@ -27,7 +30,13 @@
   },
   "devDependencies": {
     "@types/node": "^20.9.2",
+    "@types/mocha": "^10.0.6",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
     "ts-node": "^10.9.1",
+    "ts-mocha": "^10.0.0",
+    "nyc": "^15.1.0",
     "tsconfig-paths": "^4.2.0"
   }
 }
